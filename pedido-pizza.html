@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pedido de Pizza</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #fff8f0; color: #333; padding: 20px;">
+
+  <header style="text-align: center; margin-bottom: 20px;">
+    <img src="logopizzariacarol.jpeg" alt="Logo da Pizzaria" width="150">
+    <h1 style="color: #d63031;">Carol Delícias Pizzaria</h1>
+  </header>
+
+  <form onsubmit="return confirm('Deseja confirmar o pedido?')" style="max-width: 600px; margin: auto;">
+
+    <fieldset style="border: 2px solid #d63031; padding: 20px; margin-bottom: 20px;">
+      <legend><strong>Cadastro do Cliente</strong></legend>
+
+      <label for="nome">Nome completo:</label><br>
+      <input type="text" id="nome" name="nome" required style="width: 100%; margin-bottom: 10px;"><br>
+
+      <label for="email">E-mail:</label><br>
+      <input type="email" id="email" name="email" required style="width: 100%; margin-bottom: 10px;"><br>
+
+      <label for="telefone">Telefone:</label><br>
+      <input type="tel" id="telefone" name="telefone" required style="width: 100%; margin-bottom: 10px;"><br>
+
+      <label for="observacoes">Observações adicionais:</label><br>
+      <textarea id="observacoes" name="observacoes" rows="4" style="width: 100%;"></textarea>
+    </fieldset>
+
+    <fieldset style="border: 2px solid #0984e3; padding: 20px; margin-bottom: 20px;">
+      <legend><strong>Pedido da Pizza</strong></legend>
+
+      <p>Tamanho da pizza:</p>
+      <input type="radio" id="pequena" name="tamanho" value="Pequena" required>
+      <label for="pequena">Pequena</label><br>
+
+      <input type="radio" id="media" name="tamanho" value="Média">
+      <label for="media">Média</label><br>
+
+      <input type="radio" id="grande" name="tamanho" value="Grande">
+      <label for="grande">Grande</label><br><br>
+
+      <p>Sabores (escolha ao menos um):</p>
+      <input type="checkbox" id="margherita" name="sabores" value="Margherita">
+      <label for="margherita">Margherita</label><br>
+
+      <input type="checkbox" id="calabresa" name="sabores" value="Calabresa">
+      <label for="calabresa">Calabresa</label><br>
+
+      <input type="checkbox" id="portuguesa" name="sabores" value="Portuguesa">
+      <label for="portuguesa">Portuguesa</label><br>
+
+      <input type="checkbox" id="quatro" name="sabores" value="Quatro Queijos">
+      <label for="quatro">Quatro Queijos</label><br>
+
+      <input type="checkbox" id="frango" name="sabores" value="Frango com Catupiry">
+      <label for="frango">Frango com Catupiry</label><br><br>
+
+      <p>Borda recheada?</p>
+      <input type="radio" id="bordaSim" name="borda" value="Sim" required>
+      <label for="bordaSim">Sim</label>
+
+      <input type="radio" id="bordaNao" name="borda" value="Não">
+      <label for="bordaNao">Não</label><br><br>
+
+      <label for="bebida">Bebida:</label><br>
+      <select id="bebida" name="bebida" style="width: 100%; margin-bottom: 10px;">
+        <option value="Nenhuma">Nenhuma</option>
+        <option value="Refrigerante">Refrigerante</option>
+        <option value="Suco">Suco</option>
+        <option value="Água">Água</option>
+      </select><br>
+
+      <label for="instrucoes">Instruções para entrega:</label><br>
+      <textarea id="instrucoes" name="instrucoes" rows="3" style="width: 100%;"></textarea>
+    </fieldset>
+
+    <div style="text-align: center;">
+      <button type="submit" style="background-color: #27ae60; color: white; padding: 10px 20px; border: none; margin-right: 10px;">Enviar Pedido</button>
+      <button type="reset" style="background-color: #e17055; color: white; padding: 10px 20px; border: none;">Limpar Campos</button>
+    </div>
+
+  </form>
+
+  <footer style="text-align: center; margin-top: 30px; color: #999;">
+    <p>Carol Delícias Pizzaria - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
